@@ -1,7 +1,3 @@
 export const BlogListPage = () => {
-    return (
-        <div>
-            Blog list page
-        </div>
-    )
-}
+  return <div>Blog list page</div>;
+};

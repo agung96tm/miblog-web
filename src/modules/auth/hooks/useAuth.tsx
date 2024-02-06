@@ -1,25 +1,25 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from 'react';
 
 export const useAuth = () => {
-    const [isLoading, setIsLoading] = useState(false);
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-    const doAuthCheck = () => {
-        setIsLoading(true);
+  const doAuthCheck = () => {
+    setIsLoading(true);
 
-        const access = localStorage.getItem("access")
-        if (!!access) {
-            setIsAuthenticated(true);
-        } else {
-            setIsAuthenticated(false);
-        }
-
-        setIsLoading(false);
+    const access = localStorage.getItem('access');
+    if (!!access) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
     }
 
-    useEffect(() => {
-        doAuthCheck();
-    }, []);
+    setIsLoading(false);
+  };
 
-    return { doAuthCheck, isAuthenticated, isLoading };
+  useEffect(() => {
+    doAuthCheck();
+  }, []);
+
+  return { doAuthCheck, isAuthenticated, isLoading };
 };

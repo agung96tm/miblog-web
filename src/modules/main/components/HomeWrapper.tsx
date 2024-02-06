@@ -1,7 +1,3 @@
 export const HomeWrapper = ({ children }: any) => {
-    return (
-        <div>
-            {children}
-        </div>
-    )
-}
+  return <div>{children}</div>;
+};

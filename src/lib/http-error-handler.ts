@@ -1,14 +1,14 @@
 const parseError = (err: any) => {
-    const response = {
-        nonFieldErrors: [] as string[],
-        fields: {},
-    }
+  const response = {
+    nonFieldErrors: [] as string[],
+    fields: {},
+  };
 
-    if (err?.message && !err?.data) {
-        response.nonFieldErrors.push(err.message)
-    }
+  if (err?.message && !err?.data) {
+    response.nonFieldErrors.push(err.message);
+  }
 
-    return response;
+  return response;
 };
 
 export { parseError };

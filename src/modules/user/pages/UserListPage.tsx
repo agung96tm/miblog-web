@@ -1,7 +1,3 @@
 export const UserListPage = () => {
-    return (
-        <div>
-            User List
-        </div>
-    )
-}
+  return <div>User List</div>;
+};

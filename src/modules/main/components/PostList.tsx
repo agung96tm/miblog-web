@@ -1,12 +1,12 @@
-import { PostListItem } from "./PostListItem";
+import { PostListItem } from './PostListItem';
 
 export const PostList = () => {
-    return (
-        <div>
-            <PostListItem />
-            <PostListItem />
-            <PostListItem />
-            <PostListItem />
-        </div>
-    )
-}
+  return (
+    <div>
+      <PostListItem />
+      <PostListItem />
+      <PostListItem />
+      <PostListItem />
+    </div>
+  );
+};
